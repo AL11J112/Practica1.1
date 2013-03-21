@@ -30,6 +30,20 @@ $(document).ready(function(e) {
 		   $('#derecha').swiperight(function(){
 			   navigator.notification.alert("deslizo a la derecha",function(){},"practica 1","aceptar");
 		   });
+		   $('#izquierda').swipeleft(function(){
+		   	navigator.notification.alert("¿Que desea hacer?",function(option));{
+		   		switch(option){
+		   			case 1:
+		   			navigator.notification.beep(1);
+		   			break;
+		   			case
+		   		case 2:
+		   			navigator.notification.vibrate(500);
+		   			break;
+		   		}//switch
+		   	},"practica1","beep,vibrar,cancelar");//function confirm
+		   });//function swipe
+		   	
 	  
    },false);
 });
